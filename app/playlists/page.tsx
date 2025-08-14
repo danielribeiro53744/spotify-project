@@ -149,7 +149,7 @@ export default function PlaylistsPage() {
                     </div>
                     
                     <div className="d-grid gap-2">
-                      <Button as={Link} href={`/playlists/${playlist.id}`} variant="primary">
+                      <Button href={`/playlists/${playlist.id}`} variant="primary">
                         ▶️ Play
                       </Button>
                       <div className="btn-group">

@@ -88,10 +88,10 @@ export default function Home() {
             Ready to discover new music and enjoy your favorite songs?
           </p>
           <div>
-            <Button as={Link} href="/search" variant="primary" size="lg" className="me-3">
+            <Button href="/search" variant="primary" size="lg" className="me-3">
               Start Exploring
             </Button>
-            <Button as={Link} href="/playlists" variant="outline-primary" size="lg">
+            <Button href="/playlists" variant="outline-primary" size="lg">
               My Playlists
             </Button>
           </div>
@@ -143,7 +143,7 @@ export default function Home() {
                         <Card.Text>
                           <small className="text-muted">{playlist.tracks.total} tracks</small>
                         </Card.Text>
-                        <Button as={Link} href={`/playlists/${playlist.id}`} variant="primary">
+                        <Button  href={`/playlists/${playlist.id}`} variant="primary">
                           View Playlist
                         </Button>
                       </Card.Body>
@@ -199,7 +199,7 @@ export default function Home() {
                         <Card.Text>
                           <small className="text-muted">{playlist.tracks.total} tracks</small>
                         </Card.Text>
-                        <Button as={Link} href={`/playlists/${playlist.id}`} variant="primary">
+                        <Button href={`/playlists/${playlist.id}`} variant="primary">
                           View Playlist
                         </Button>
                       </Card.Body>
@@ -222,7 +222,7 @@ export default function Home() {
                     <div className="mb-3" style={{ fontSize: '2rem' }}>🔍</div>
                     <Card.Title>Search Music</Card.Title>
                     <Card.Text>Find songs, artists, and albums</Card.Text>
-                    <Button as={Link} href="/search" variant="outline-primary">
+                    <Button href="/search" variant="outline-primary">
                       Search
                     </Button>
                   </Card.Body>
@@ -234,7 +234,7 @@ export default function Home() {
                     <div className="mb-3" style={{ fontSize: '2rem' }}>📝</div>
                     <Card.Title>Create Playlist</Card.Title>
                     <Card.Text>Build your perfect playlist</Card.Text>
-                    <Button as={Link} href="/playlists" variant="outline-primary">
+                    <Button  href="/playlists" variant="outline-primary">
                       Create
                     </Button>
                   </Card.Body>
@@ -246,7 +246,7 @@ export default function Home() {
                     <div className="mb-3" style={{ fontSize: '2rem' }}>🎲</div>
                     <Card.Title>Discover</Card.Title>
                     <Card.Text>Find new music you'll love</Card.Text>
-                    <Button as={Link} href="/discover" variant="outline-primary">
+                    <Button href="/discover" variant="outline-primary">
                       Discover
                     </Button>
                   </Card.Body>
@@ -258,7 +258,7 @@ export default function Home() {
                     <div className="mb-3" style={{ fontSize: '2rem' }}>📊</div>
                     <Card.Title>Your Stats</Card.Title>
                     <Card.Text>See your listening habits</Card.Text>
-                    <Button as={Link} href="/profile" variant="outline-primary">
+                    <Button href="/profile" variant="outline-primary">
                       View Stats
                     </Button>
                   </Card.Body>
